@@ -196,6 +196,7 @@ class DemandPredictorAlgorithm(QgsProcessingAlgorithm):
 
         # create score field
         output_fields = QgsFields()
+        output_fields.append(QgsField('Name', QVariant.String))
         output_fields.append(QgsField('Score', QVariant.Double))
 
         # create output
@@ -245,11 +246,15 @@ class DemandPredictorAlgorithm(QgsProcessingAlgorithm):
                 score += calculate_score(male_dist, female_dist, age, gender,
                                          val, minimum_age = mini_age, area = feature['Shape__Area'])
 
-            # set score attribute
+            # set score and name attributes
             new_feature = QgsFeature(output_fields)
             new_feature.setAttribute('Score', score)
-
-            #set new_feature geometry
+            try:
+                new_feature.setAttribute('Name', feature['EDName'])
+            except:
+                pass
+            
+            # set new_feature geometry
             new_feature.setGeometry(feature.geometry())
 
             # Add a feature in the sink
