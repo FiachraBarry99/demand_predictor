@@ -2,7 +2,7 @@
 
 This is a QGIS plugin which uses Irish census data (but could be modified to include other sources) to predict demographic based demand. This can be used to predict demand for any number of different products/services as the distribution function can be easily changed to suit your needs.
 
-### Installation
+## Installation
 
 To install this plugin simply download the code from this repository and place it in your python plugins folder. To download the code go to the homepage of this repository and click the green Code button in the top right. Then click Download ZIP.
 
@@ -15,3 +15,23 @@ To find the plugins folder you can open QGIS and at the top click Settings > Use
 <br>
 
 Then once you have this folder open click into python > plugins and then paste the demand_predictor-master folder from inside the downloaded ZIP file. Finally, reload your QGIS and you should be able to see the plugin in the processing toolbox.
+
+## Usage
+
+Once the plugin is properly installed you should be able to see it in your processing toolbox. This should be available on the right side of your screen. It can also be accessed using Ctrl+Alt+t or by the Processing tab at the top of the screen.
+
+*insert picture of processing toolboox*
+
+Once you have located the plugin double click on it or click the dropdown arrow. This should display the algorithms associated with the plugin of which there is just the one. Double click this and you should be greeted by the interface shown below.
+
+*insert pic of plugin GUI*
+
+Below is a brief explanation of what each of the parameters means:
+
+- **Input Layer**: this should be the file containing the Irish census data. Many different file formats should work but some common ones are .kml, .shp/.shx etc.
+- **Male Distribution Function**: this is the function which governs how the male population scores are calculated. For more info chek out the How it Works section.
+- **Female Distribution Function**: this is the function which governs how the female population scores are calculated. For more info chek out the How it Works section.
+- **Minimum Age**: below this age the algorithm will not add to the scores for any area.
+- **Output Layer**: where you want the output to be stored. This can be left blank for a temporary layer and made permanent later.
+
+## How it Works
