@@ -1,39 +1,11 @@
-<html>
-<body>
-<h3>Plugin Builder Results</h3>
+# Demand Predictor QGIS Plugin
 
-Congratulations! You just built a plugin for QGIS!<br/><br />
+This is a QGIS plugin which uses Irish census data (but could be modified to include other sources) to predict demographic based demand. This can be used to predict demand for any number of different products/services as the distribution function can be easily changed to suit your needs.
 
-<div id='help' style='font-size:.9em;'>
-Your plugin <b>DemandPredictor</b> was created in:<br>
-&nbsp;&nbsp;<b>/home/fiachra/Documents/zipp-project/demand_predictor</b>
-<p>
-Your QGIS plugin directory is located at:<br>
-&nbsp;&nbsp;<b>/home/fiachra/.local/share/QGIS/QGIS3/profiles/default/python/plugins</b>
-<p>
-<h3>What's Next</h3>
-<ol>
-    <li>Test the generated sources using <b>make test</b> (or run tests from your IDE)
-    <li>Copy the entire directory containing your new plugin to the QGIS plugin directory (see Notes below)
-    <li>Test the plugin by enabling it in the QGIS plugin manager and enabling the provider in the Processing Options
-    <li>Customize it by editing the implementation file <b>demand_predictor_algorithm.py</b>
-</ol>
-Notes:
-<ul>
-    <li>You can use the <b>Makefile</b> to compile and deploy when you
-        make changes. This requires GNU make (gmake). The Makefile is ready to use, however you 
-        will have to edit it to add addional Python source files, dialogs, and translations.
-    <li>You can also use <b>pb_tool</b> to compile and deploy your plugin. Tweak the <i>pb_tool.cfg</i> file included with your plugin as you add files. Install <b>pb_tool</b> using 
-        <i>pip</i> or <i>easy_install</i>. See <b>http://loc8.cc/pb_tool</b> for more information.
-</ul>
-</div>
-<div style='font-size:.9em;'>
-<p>
-For information on writing PyQGIS code, see <b>http://loc8.cc/pyqgis_resources</b> for a list of resources.
-</p>
-</div>
-<p>
-&copy;2011-2018 GeoApt LLC - geoapt.com 
-</p>
-</body>
-</html>
+#### Installation
+
+To install this plugin simply download the code from this repository and place it in your python plugins folder. To download the code go to the homepage of this repository and click the green Code button in the top right. Then click Download ZIP.
+
+To find the plugins folder you can open QGIS and at the top click Settings > User Profiles > Open Active Profile Folder. 
+
+Then once you have this folder open click into python > plugins and then paste the demand_predictor-master folder from inside the downloaded ZIP file. Finally, reload your QGIS and you should be able to see the plugin in the processing toolbox.
