@@ -146,7 +146,7 @@ class DemandPredictorAlgorithm(QgsProcessingAlgorithm):
             QgsProcessingParameterString(
                 self.MALE_DIST_FUNCTION,
                 self.tr('Male Distribution Function'),
-                "Function can be written using any of Python's math module but must use <age> as the variable \ni.e. 1/sqrt(age)",
+                "Function can be written using any of Python's math module but must use <age> as the variable",
                 )
         )
 
@@ -154,7 +154,7 @@ class DemandPredictorAlgorithm(QgsProcessingAlgorithm):
             QgsProcessingParameterString(
                 self.FEMALE_DIST_FUNCTION,
                 self.tr('Female Distribution Function'),
-                "Note also you must be careful as what you type will be executed as code"
+                "Examples: 1/sqrt(age), (1/(20*sqrt(2*pi)))*exp(((age-22)**2)/(2*20**2))"
                 )
         )
 
