@@ -56,6 +56,6 @@ Below is a brief explanation of what each of the parameters means:
 
 ## Getting Census Data
 
-To get census data to use in this plug in visit [**this link**](https://census2016.geohive.ie/datasets/population-aged-0-19-by-sex-year-of-age-persons-aged-20-by-sex-and-age-group-small-areas-census-2016-theme-1-1-ireland-2016-cso-osi/explore?location=53.354325%2C-6.242087%2C12.67). While you can just hit download there it will download a data set for the entire island of Ireland which will take a long time to process. Luckily on this website you can also filter the data before you download it.
+To get census data to use in this plug in visit [**THIS LINK**](https://census2016.geohive.ie/datasets/population-aged-0-19-by-sex-year-of-age-persons-aged-20-by-sex-and-age-group-small-areas-census-2016-theme-1-1-ireland-2016-cso-osi/explore?location=53.354325%2C-6.242087%2C12.67). While you can just hit download there it will download a data set for the entire island of Ireland which will take a long time to process. Luckily on this website you can also filter the data before you download it.
 
 ## How it Works
