@@ -58,4 +58,10 @@ Below is a brief explanation of what each of the parameters means:
 
 To get census data to use in this plug in visit [**THIS LINK**](https://census2016.geohive.ie/datasets/population-aged-0-19-by-sex-year-of-age-persons-aged-20-by-sex-and-age-group-small-areas-census-2016-theme-1-1-ireland-2016-cso-osi/explore?location=53.354325%2C-6.242087%2C12.67). While you can just hit download there it will download a data set for the entire island of Ireland which will take a long time to process. Luckily on this website you can also filter the data before you download it.
 
+![Dataset download](/images/dataset-download.png)
+
+<br>
+
+As shown above you access the filters by clicking on the tab on the left. Then selecting which field you want to filter on. The "County" field I have circled is probably the most useful filter. You can select particular counties/cities and filter out data you don't need. Then by clicking the tab just below filter you can download the data. On that tab select the KML or Shapefile download option. Select this file when prompted to by the plugin as the Input Layer.
+
 ## How it Works
